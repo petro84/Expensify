@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/*",
-    "build-dev": "NODE_ENV=development parcel build src/index.html",
+    "start-dev": "NODE_ENV=development parcel src/index.html --open",
     "build-prod": "parcel build src/index.html",
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
@@ -19,6 +19,7 @@
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
     "react": "^16.13.0",
     "react-dates": "^21.8.0",
     "react-dom": "^16.13.0",
