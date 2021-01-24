@@ -1,0 +1,41 @@
+{
+  "name": "expensify-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html --open",
+    "build-prod": "parcel build src/index.html",
+    "test": "jest --config=jest.config.json"
+  },
+  "dependencies": {
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.13.0",
+    "react-modal": "^3.11.2",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.1",
+    "jest": "^26.6.3",
+    "parcel-bundler": "^1.12.4",
+    "raf": "^3.4.1",
+    "react-test-renderer": "^17.0.1"
+  }
+}
