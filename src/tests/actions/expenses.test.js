@@ -36,7 +36,7 @@ test('should setup remove expense action', () => {
 });
 
 test('should remove expense from database', (done) => {
-  const store = createMockStore();
+  const store = createMockStore({});
   const id = expenses[1].id;
 
   store
@@ -65,7 +65,7 @@ test('should setup edit expense action', () => {
 });
 
 test('should update expense in database', (done) => {
-  const store = createMockStore();
+  const store = createMockStore({});
   const id = expenses[1].id;
   const updates = { note: 'For February' };
 
