@@ -1,9 +1,8 @@
 {
-    "setupFiles": [
-        "raf/polyfill",
-        "<rootDir>/src/tests/setupTests.js"
-    ],
-    "snapshotSerializers": [
-        "enzyme-to-json/serializer"
-    ]
+  "setupFiles": ["raf/polyfill", "<rootDir>/src/tests/setupTests.js"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "transform": {
+    "\\.(gif)$": "<rootDir>/src/tests/__mocks__/fileMock.js",
+    "\\.(js|jsx)$": "babel-jest"    
+  }
 }
